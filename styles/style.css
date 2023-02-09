@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/*Telas pequenas*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: #54426C;
+    --cor2: #846F98;
+    --cor3: #857099;
+    --cor4: #9A85B0;
+    --cor5: #C4B3D7;
+}
+
+header {
+    background-color: var(--cor1);
+    color: white;
+    padding: 20px 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1, header form, header span {
+    display: inline-block;
+}
+
+header > span {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+input {
+    width: 35vw;
+    outline: none;
+}
+
+input::placeholder {
+    text-align: right;
+}
+
+nav {
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 64px;
+    background-color: var(--cor2);
+    padding: 0px 5px;
+}
+
+nav > a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0px;
+}
+/*FIM DO HEADER*/
+
+main {
+    margin-top: 10px;
+}
+
+div#exibir { /*Exibe a foto selecionada*/
+    width: 300px;
+    height: 300px;
+    background: lightgray url('../images/foto1.jpg') center center no-repeat scroll;
+    background-size: cover;
+    margin: auto;
+}
+
+aside { /*Engloba as imagens para escolha*/
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+}
+
+aside:hover :not(:hover) {
+    opacity: 0.8;
+}
+
+aside > img { /*Imagens que podem ser selecionadas*/
+    display: inline-block;
+    width: calc(25% - 7.1px);
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+img#img01 {
+    margin-left: 0px;
+    transform: scale(1.1);
+}
