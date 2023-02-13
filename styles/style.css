@@ -22,7 +22,7 @@ header {
     display: flex;
     background-color: var(--cor1);
     color: white;
-    padding: 20px 5%;
+    padding: 20px 15px;
     text-align: center;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +34,7 @@ header h1, header form, header span {
 
 header > span {
     cursor: pointer;
+    margin-right: 20px;
 }
 
 h1 {
@@ -72,6 +73,7 @@ main {
     padding-top: 10px;
 }
 
+/*Parte de Imagens*/
 section#part1 {
     width: 320px;
     margin: 0 auto;
@@ -85,25 +87,25 @@ section#part1 > h1 {
     text-align: center;
 }
 
-#exibir { /*Exibe a foto selecionada*/
+div#exibir { /*Exibe a foto selecionada*/
     width: 300px;
     height: 300px;
-    background: lightgray url('../images/foto1.jpg') center center no-repeat scroll;
+    background: lightgray url('../images/violeta/violeta1.jpg') center center no-repeat scroll;
     background-size: cover;
     margin: auto;
 }
 
-aside { /*Engloba as imagens para escolha*/
+aside#fotos { /*Engloba as imagens para escolha*/
     display: block;
     margin: 20px auto;
     width: 300px;
 }
 
-aside:hover :not(:hover) {
+aside#fotos:hover :not(:hover) {
     opacity: 0.8;
 }
 
-aside > img { /*Imagens que podem ser selecionadas*/
+#fotos > img { /*Imagens que podem ser selecionadas*/
     display: inline-block;
     width: calc(25% - 7.1px);
     cursor: pointer;
@@ -113,4 +115,26 @@ aside > img { /*Imagens que podem ser selecionadas*/
 img#img01 {
     margin-left: 0px;
     transform: scale(1.1);
+}
+
+/*Parte de icones*/
+aside#icons {
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 0px 10px 0px 5px;
+    background-color: #dddddd;
+}
+
+aside#icons > p {
+    display: inline-block;
+}
+
+aside#icons > abbr > img {
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
 }

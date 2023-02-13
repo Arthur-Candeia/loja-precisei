@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purple Shirt</title>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
-    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body onresize="mudarTamanho()">
 
@@ -29,16 +29,27 @@
         <section id="part1">
             <h1>EZwear Simples ocasional Camiseta</h1>
             <div id="exibir"></div>
-            <aside>
-                <img id="img01" src="images/foto1.jpg" alt="Primeira Imagem" onclick="picture1()">
-                <img id="img02" src="images/foto2.jpg" alt="Segunda Imagem" onclick="picture2()">
-                <img id="img03" src="images/foto3.jpg" alt="Terceira Imagem" onclick="picture3()">
-                <img id="img04" src="images/foto4.jpg" alt="Quarta Imagem" onclick="picture4()">
+            <aside id="fotos">
+                <img id="img01" src="images/violeta/violeta1.jpg" alt="Primeira Imagem" onclick="picture1()">
+                <img id="img02" src="images/violeta/violeta2.jpg" alt="Segunda Imagem" onclick="picture2()">
+                <img id="img03" src="images/violeta/violeta3.jpg" alt="Terceira Imagem" onclick="picture3()">
+                <img id="img04" src="images/violeta/violeta4.jpg" alt="Quarta Imagem" onclick="picture4()">
+            </aside>
+            <aside id="icons">
+                <p>Cores: </p>
+                <abbr title="Violeta"><img src="images/icons/violeta-icon.jpg" alt="Cor violeta" onclick="Violeta()"></abbr>
+                <abbr title="Marrom"><img src="images/icons/marrom-icon.jpg" alt="Cor marrom" onclick="Marrom()"></abbr>
+                <abbr title="Branca"><img src="images/icons/branca-icon.jpg" alt="Cor branca" onclick="Branca()"></abbr>
+                <abbr title="Preta"><img src="images/icons/preta-icon.jpg" alt="Cor preta" onclick="Preta()"></abbr>
             </aside>
         </section>
 
         <!--nome: 
             script: img.setAttribute('src', 'outra_imagem.png');-->
     </main>
+
+
+
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
