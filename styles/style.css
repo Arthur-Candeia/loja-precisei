@@ -138,3 +138,35 @@ aside#icons > abbr > img {
     border-radius: 50%;
     cursor: pointer;
 }
+
+/*Parte do preço*/
+aside#valor {
+    margin: 10px;
+}
+
+.valor-antigo {
+    font-size: 0.8em;
+    color: #777777;
+}
+
+.valor-atual, .desconto {
+    display: inline-block;
+}
+
+.valor-atual {
+    font-size: 1.4em;
+    color: var(--cor1);
+    margin-bottom: 5px;
+}
+
+.desconto {
+    background-color: red;
+    color: white;
+    height: 14px;
+    padding: 2px;
+    font-size: 0.8em;
+}
+
+input#qtd {
+    width: 25px;
+}
