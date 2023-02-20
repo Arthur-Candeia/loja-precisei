@@ -2,6 +2,7 @@ foto1 = 'url(images/violeta/violeta1.jpg)'
 foto2 = 'url(images/violeta/violeta2.jpg)'
 foto3 = 'url(images/violeta/violeta3.jpg)'
 foto4 = 'url(images/violeta/violeta4.jpg)'
+let quantidade = 1
 
 function mudarTamanho() {
   if (window.innerWidth >= 600) {
@@ -127,4 +128,18 @@ function picture4() {
   img02.style.transform = 'scale(1)'
   img03.style.transform = 'scale(1)'
   img04.style.transform = 'scale(1.1)'
+}
+
+function menos() {
+  if (quantidade >= 2) {
+    quantidade -= 1
+    qtd.innerHTML = quantidade
+  }
+}
+
+function mais() {
+  if (quantidade <=8) {
+    quantidade += 1
+    qtd.innerHTML = quantidade
+  }
 }

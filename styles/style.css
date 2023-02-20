@@ -167,6 +167,16 @@ aside#valor {
     font-size: 0.8em;
 }
 
-input#qtd {
-    width: 25px;
+.definir-quantidade {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+button.definir-quantidade {
+    cursor: pointer;
+    background-color: var(--cor4);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border: none;
 }
