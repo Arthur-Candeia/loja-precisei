@@ -98,7 +98,7 @@ function Preta() {
   img04.style.transform = 'scale(1)'
 }
 
-function picture1() {
+function picture1() { //muda a escala da foto escolhida
   exibir.style.backgroundImage = foto1
   img01.style.transform = 'scale(1.1)'
   img02.style.transform = 'scale(1)'
@@ -128,6 +128,46 @@ function picture4() {
   img02.style.transform = 'scale(1)'
   img03.style.transform = 'scale(1)'
   img04.style.transform = 'scale(1.1)'
+}
+
+function tamanhoPP() { //Muda a cor da borda do tamanho selecionado
+  pp.style.borderColor = '#54426C'
+  p.style.borderColor = '#C4B3D7'
+  m.style.borderColor = '#C4B3D7'
+  g.style.borderColor = '#C4B3D7'
+  gg.style.borderColor = '#C4B3D7'
+}
+
+function tamanhoP() {
+  pp.style.borderColor = '#C4B3D7'
+  p.style.borderColor = '#54426C'
+  m.style.borderColor = '#C4B3D7'
+  g.style.borderColor = '#C4B3D7'
+  gg.style.borderColor = '#C4B3D7'
+}
+
+function tamanhoM() {
+  pp.style.borderColor = '#C4B3D7'
+  p.style.borderColor = '#C4B3D7'
+  m.style.borderColor = '#54426C'
+  g.style.borderColor = '#C4B3D7'
+  gg.style.borderColor = '#C4B3D7'
+}
+
+function tamanhoG() {
+  pp.style.borderColor = '#C4B3D7'
+  p.style.borderColor = '#C4B3D7'
+  m.style.borderColor = '#C4B3D7'
+  g.style.borderColor = '#54426C'
+  gg.style.borderColor = '#C4B3D7'
+}
+
+function tamanhoGG() {
+  pp.style.borderColor = '#C4B3D7'
+  p.style.borderColor = '#C4B3D7'
+  m.style.borderColor = '#C4B3D7'
+  g.style.borderColor = '#C4B3D7'
+  gg.style.borderColor = '#54426C'
 }
 
 function menos() {
