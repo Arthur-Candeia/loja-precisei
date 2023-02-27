@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 /*Telas pequenas*/
 
 * {
@@ -49,6 +50,7 @@ h1 {
 input {
     width: 35vw;
     outline: none;
+    max-width: 500px;
 }
 
 input::placeholder {
@@ -69,6 +71,11 @@ nav > a {
     color: white;
     text-decoration: none;
     margin: 10px 0px;
+    transition: color 0.3s ease-in;
+}
+
+nav > a:hover {
+    color: var(--cor5);
 }
 /*FIM DO HEADER*/
 
@@ -127,18 +134,28 @@ img#img01 {
 
 /*Parte de icones*/
 aside#icons {
-    width: 200px;
+    width: 280px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
     padding: 10px;
     border-radius: 0px 10px 0px 5px;
-    background-color: #dddddd;
 }
 
 aside#icons > p {
     display: inline-block;
+}
+
+aside#icons > abbr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #dddddd;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 aside#icons > abbr > img {
@@ -157,12 +174,19 @@ aside#tamanhos > p {
 }
 
 aside#tamanhos > span {
+    display: inline-block;
     margin-right: 5px;
+    margin-bottom: 5px;
     border: 2px solid var(--cor5);
+    background-color: #dddddd;
     padding: 6px 15.8px;
     font-size: 0.9em;
     border-radius: 20px;
     cursor: pointer;
+}
+
+aside#icons > p, aside#tamanhos > p {
+    font-family: 'Tilt neon';
 }
 
 /*Parte do preço*/

@@ -5,8 +5,8 @@ foto4 = 'url(images/violeta/violeta4.jpg)'
 let quantidade = 1
 
 function mudarTamanho() {
-  if (window.innerWidth >= 600) {
-      nav.style.display = 'block'
+  if (window.innerWidth >= 1000) {
+      nav.style.display = 'flex'
   }
   else {
       nav.style.display = 'none'
