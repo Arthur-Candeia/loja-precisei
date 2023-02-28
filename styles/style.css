@@ -110,7 +110,7 @@ div#exibir { /*Exibe a foto selecionada*/
 
 aside#fotos { /*Engloba as imagens para escolha*/
     display: block;
-    margin: 20px auto;
+    margin: 20px auto 10px auto;
     max-width: 300px;
     min-width: 250px;
 }
@@ -139,38 +139,34 @@ aside#icons {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 0px 10px 0px 5px;
 }
 
 aside#icons > p {
-    display: inline-block;
+    display: block;
 }
 
 aside#icons > abbr {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: #dddddd;
     border-radius: 50%;
-    cursor: pointer;
 }
 
 aside#icons > abbr > img {
-    width: 20px;
+    width: 15px;
     border-radius: 50%;
     cursor: pointer;
 }
 
 /*Parte dos tamanhos*/
 aside#tamanhos {
-    padding: 10px;
-}
-
-aside#tamanhos > p {
-    margin-bottom: 10px;
+    padding: 0 10px;
+    margin: 10px 0 10px 0;
 }
 
 aside#tamanhos > span {
@@ -180,7 +176,7 @@ aside#tamanhos > span {
     border: 2px solid var(--cor5);
     background-color: #dddddd;
     padding: 6px 15.8px;
-    font-size: 0.9em;
+    font-size: 0.7em;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -191,7 +187,7 @@ aside#icons > p, aside#tamanhos > p {
 
 /*Parte do preço*/
 aside#valor {
-    margin: 10px;
+    margin: 5px 10px 5px 10px;
 }
 
 .valor-antigo {
@@ -204,7 +200,7 @@ aside#valor {
 }
 
 .valor-atual {
-    font-size: 1.4em;
+    font-size: 2em;
     color: var(--cor1);
     margin-bottom: 5px;
 }
@@ -212,14 +208,23 @@ aside#valor {
 .desconto {
     background-color: red;
     color: white;
-    height: 14px;
+    height: 17px;
     padding: 2px;
+    font-size: 1.1em;
+}
+
+div.rating > a {
+    text-decoration: none;
     font-size: 0.8em;
+}
+
+div.rating > span {
+    font-size: 0.7em;
 }
 
 .definir-quantidade {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 button.definir-quantidade {
@@ -246,4 +251,8 @@ a#comprar:active {
     background-color: var(--cor5);
     color: var(--cor1);
     box-shadow: inset 1px 1px 10px var(--cor3);
+}
+
+aside#buy {
+    margin: 10px 10px;
 }

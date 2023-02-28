@@ -30,12 +30,14 @@
         <section id="part1">
             <h1>EZwear Simples ocasional Camiseta</h1>
             <div id="exibir"></div>
+
             <aside id="fotos">
                 <img id="img01" src="images/violeta/violeta1.jpg" alt="Primeira Imagem" onclick="picture1()">
                 <img id="img02" src="images/violeta/violeta2.jpg" alt="Segunda Imagem" onclick="picture2()">
                 <img id="img03" src="images/violeta/violeta3.jpg" alt="Terceira Imagem" onclick="picture3()">
                 <img id="img04" src="images/violeta/violeta4.jpg" alt="Quarta Imagem" onclick="picture4()">
             </aside>
+
             <aside id="icons">
                 <p>Cores: </p>
                 <abbr title="Violeta"><img src="images/icons/violeta-icon.jpg" alt="Cor violeta" onclick="Violeta()"></abbr>
@@ -43,18 +45,25 @@
                 <abbr title="Branca"><img src="images/icons/branca-icon.jpg" alt="Cor branca" onclick="Branca()"></abbr>
                 <abbr title="Preta"><img src="images/icons/preta-icon.jpg" alt="Cor preta" onclick="Preta()"></abbr>
             </aside>
+
             <aside id="tamanhos">
-                <p>Tamanhos:</p>
                 <span id="pp" onclick="tamanhoPP()">PP</span>
                 <span id="p" onclick="tamanhoP()">P</span>
                 <span id="m" onclick="tamanhoM()">M</span>
                 <span id="g" onclick="tamanhoG()">G</span>
                 <span id="gg" onclick="tamanhoGG()">GG</span>
             </aside>
+
             <aside id="valor">
                 <p class="valor-antigo"><del>R$ 99,98</del></p>
                 <p class="valor-atual">R$24,99</p>
                 <p class="desconto"><sup>75% off</sup></p> <br>
+                <div class="rating">
+                    <a href="#">&#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;</a> <span>2.112 avaliações</span>
+                </div>     
+            </aside>
+            
+            <aside id="buy">
                 <p class="definir-quantidade">Quantidade:</p>
                 <button class="definir-quantidade" onclick="menos()">-</button>
                 <p class="definir-quantidade" id="qtd">1</p>
