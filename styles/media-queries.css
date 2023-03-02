@@ -1,3 +1,10 @@
+@media screen and (max-width: 320px) {
+  section#part2 > div > picture {
+    display: none;
+  }
+  
+}
+
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   section#part1 {
     max-width: 580px;
@@ -13,6 +20,16 @@
   aside#fotos {
     max-width: 560px;
     min-width: 400px;
+  }
+
+  section#part2 {
+    max-width: 580px;
+    min-width: 400px;
+  }
+
+  section#part2 > div > picture {
+    top: 1195px;
+    margin-left: -35px;
   }
 }
 
@@ -116,4 +133,34 @@
   aside#buy {
     padding-right: 35px;
   }
+
+  /*PARTE 2*/
+  section#part2 {
+    width: 900px;
+    max-width: 1000px;
+    height: 450px;
+    
+  }
+
+  section#part2 > div {
+    display: flex;
+    align-items: center;
+  }
+
+  section#part2 > div > picture {
+    position: relative;
+    top: 0;
+    margin-left: 0;
+    margin-top: -53px;
+    display: inline-block;
+    width: 180px;
+    height: 446px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  section#part2 > div > picture > img {
+    width: 446px;
+  }
+
 }

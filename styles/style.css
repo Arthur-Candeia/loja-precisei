@@ -85,10 +85,10 @@ main {
 }
 
 /*Parte de Imagens*/
-section#part1 {
+section#part1, section#part2 {
     max-width: 320px;
     min-width: 250px;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     border: 2px solid var(--cor5);
     border-radius: 5px;
     padding-top: 5px;
@@ -255,4 +255,39 @@ a#comprar:active {
 
 aside#buy {
     margin: 10px 10px;
+}
+
+/*PARTE 2*/
+
+section#part2 > h2 {
+    font: bold 1.9em 'Amatic SC';
+    margin: 10px 0 0 10px;
+    display: inline-block;
+}
+
+section#part2 > div > p {
+    width: 80%;
+    padding: 10px;
+    display: inline-block;
+    font: normal 1em 'Tilt neon', verdana;
+    text-align: justify;
+}
+
+section#part2 > div > p > span {
+    display: block;
+    margin: 10px 0;
+    line-height: 2;
+}
+
+section#part2 > div > picture {
+    position: absolute;
+    top: 1170px;
+    margin-left: -87px;
+    width: 150px;
+    height: 180px;
+    overflow: hidden;
+}
+
+section#part2 > div > picture > img {
+    width: 180px;
 }
