@@ -84,8 +84,9 @@ main {
     padding-top: 10px;
 }
 
+/*PARTE 1*/
 /*Parte de Imagens*/
-section#part1, section#part2 {
+section#part1, section#part2, section#part3 {
     max-width: 320px;
     min-width: 250px;
     margin: 0 auto 10px auto;
@@ -281,7 +282,7 @@ section#part2 > div > p > span {
 
 section#part2 > div > picture {
     position: absolute;
-    top: 1170px;
+    top: 1175px;
     margin-left: -87px;
     width: 150px;
     height: 180px;
@@ -290,4 +291,66 @@ section#part2 > div > picture {
 
 section#part2 > div > picture > img {
     width: 180px;
+}
+
+/*PARTE 3*/
+section#part3 > div#avaliacao {
+    position: relative;
+}
+
+section#part3 > div#avaliacao > h2 {
+    font: bold 1.9em 'Amatic SC';
+    margin: 10px 0 0 10px;
+}
+
+section#part3 > div#avaliacao > span.star {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    margin-top: -20px;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.308);
+}
+
+section#part3 > div#avaliacao > p#numero-avaliacao {
+    position: absolute;
+    top: 135px;
+    left: 160px;
+    font: normal 3em 'Amatic SC';
+    transform: translate(-50%, -50%)
+}
+
+section#part3 > div#avaliacao > p#palavra-avaliacao {
+    display: block;
+    text-align: center;
+    font: bold 2em 'Tilt neon';
+    color: #FCD53F;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+    border-bottom: 1px dashed var(--cor2);
+}
+
+section#part3 > div#comentarios {
+    margin: 10px;
+}
+
+section#part3 > div#comentarios > aside.comentario-individual {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+section#part3 > div#comentarios > aside.comentario-individual > img {
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+section#part3 > div#comentarios > aside.comentario-individual > p.nome {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+section#part3 > div#comentarios > a {
+    display: block;
+    text-align: right;
+    font-size: 0.8em;
 }
