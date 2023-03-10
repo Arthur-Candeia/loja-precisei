@@ -41,6 +41,11 @@
     display: block;
     flex-basis: 100%;
   }
+
+  section#historia, section#ajuda {
+    max-width: 580px;
+    min-width: 400px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -216,4 +221,22 @@
     display: block;
     flex-basis: 100%;
   }
+
+  /*FALE CONOSCO*/
+  section#historia {
+    width: 900px;
+    max-width: 1000px;
+    height: 510px;
+  }
+
+  section#ajuda {
+    width: 900px;
+    max-width: 1000px;
+    height: 830px;
+  }
+}
+
+header > a {
+  text-decoration: none;
+  color: white;
 }

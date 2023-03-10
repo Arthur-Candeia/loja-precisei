@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+/*Telas pequenas*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --cor1: #54426C;
+    --cor2: #846F98;
+    --cor3: #857099;
+    --cor4: #9A85B0;
+    --cor5: #C4B3D7;
+}
+
+header {
+    display: flex;
+    background-color: var(--cor1);
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1, header form, header span {
+    display: inline-block;
+}
+
+header > span {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 1.1em;
+    font-family: 'Pangolin';
+}
+
+header input {
+    width: 35vw;
+    outline: none;
+    max-width: 500px;
+}
+
+header input::placeholder {
+    text-align: right;
+}
+
+nav {
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 64px;
+    background-color: var(--cor2);
+    padding: 0px 5px;
+}
+
+nav > a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0px;
+    transition: color 0.3s ease-in;
+    width: 80px;
+}
+
+nav > a:hover {
+    color: var(--cor5);
+}
+/*FIM DO HEADER*/
+
+/*Parte da História*/
+main {
+  padding-top: 10px;
+}
+
+section#historia {
+  max-width: 320px;
+  min-width: 250px;
+  margin: 0 auto 10px auto;
+  border: 2px solid var(--cor5);
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+section#historia > h1 {
+  font: normal 1.9em 'Amatic SC';
+  margin: 10px 0 0 10px;
+}
+
+section#historia > p {
+  width: 80%;
+  padding: 10px;
+  display: inline-block;
+  font: normal 1em 'Tilt neon', verdana;
+  text-align: justify;
+}
+
+section#historia > p > span {
+  display: inline-block;
+  font: normal 1em 'Tilt neon', verdana;
+  margin-bottom: 10px;
+}
+
+/*Parte da Ajuda*/
+section#ajuda {
+  max-width: 320px;
+  min-width: 250px;
+  margin: 0 auto 10px auto;
+  border: 2px solid var(--cor5);
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+section#ajuda > h1 {
+  font: normal 1.9em 'Amatic SC';
+  margin: 10px 0 0 10px;
+}
+
+section#ajuda > p {
+  width: 80%;
+  padding: 10px;
+  display: inline-block;
+  font: normal 1em 'Tilt neon', verdana;
+  text-align: justify;
+}
+
+section#ajuda > p > span {
+  display: inline-block;
+  font: normal 1em 'Tilt neon', verdana;
+  margin-bottom: 10px;
+}
+
+section#ajuda > form {
+  text-align: center;
+}
+
+section#ajuda > form > input {
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 5px;
+  outline: 1px solid var(--cor3);
+  border: 2px solid transparent;
+}
+
+section#ajuda > form > input:focus {
+  border: 2px solid var(--cor2);
+  outline: none;
+}
+
+section#ajuda > form > textarea {
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  outline: 1px solid var(--cor3);
+  border: 2px solid transparent;
+}
+
+section#ajuda > form > textarea:focus {
+  border: 2px solid var(--cor2);
+  outline: none;
+}
+
+section#ajuda > form [type='submit'] {
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: var(--cor3);
+  color: white;
+}
+
+section#ajuda > form [type='submit']:focus {
+  background-color: var(--cor1);
+}
+
