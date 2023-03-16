@@ -357,3 +357,7 @@ section#part3 > div#comentarios > a {
     text-align: right;
     font-size: 0.8em;
 }
+
+section#part2, section#part3 {
+    visibility: hidden;
+}

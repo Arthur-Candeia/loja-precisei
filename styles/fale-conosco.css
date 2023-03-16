@@ -71,8 +71,8 @@ nav > a {
     color: white;
     text-decoration: none;
     margin: 10px 0px;
+    width: 90px;
     transition: color 0.3s ease-in;
-    width: 80px;
 }
 
 nav > a:hover {
@@ -185,3 +185,6 @@ section#ajuda > form [type='submit']:focus {
   background-color: var(--cor1);
 }
 
+section#ajuda {
+  visibility: hidden;
+}

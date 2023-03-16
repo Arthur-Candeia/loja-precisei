@@ -183,3 +183,9 @@ function mais() {
     qtd.innerHTML = quantidade
   }
 }
+
+window.sr = ScrollReveal({reset: true});
+
+sr.reveal('section#part2', {duration: 1000});
+sr.reveal('section#part3', {duration: 1000});
+sr.reveal('section#ajuda', {duration: 1000});
