@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../styles/carrinho.css">
   <link rel="stylesheet" href="../styles/media-queries.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body onresize="mudarTamanho()">
 
@@ -23,7 +24,36 @@
       <a href="../pags/fale-conosco.html" target="_self" rel="next">Fale Conosco</a>
     </nav>
     <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-</header>
+  </header>
+
+  <main>
+    <section id="carrinho">
+      <div id="imagemCarrinho"></div>
+      <p>Cor:</p>
+      <select name="corCarrinho" id="corCarrinho">
+        <option value="V">Violeta</option>
+        <option value="M">Marrom</option>
+        <option value="B">Branca</option>
+        <option value="P">Preta</option>
+      </select><br>
+      <p>Tam:</p>
+      <select name="tamanhoCarrinho" id="tamanhoCarrinho">
+        <option value="pp">PP</option>
+        <option value="p">P</option>
+        <option value="m">M</option>
+        <option value="g">G</option>
+        <option value="gg">GG</option>
+      </select> <br>
+      <p>Qtd:</p>
+      <button class="definir-quantidade" onclick="menos()">-</button>
+      <p class="definir-quantidade" id="qtd">1</p>
+      <button class="definir-quantidade" onclick="mais()">+</button> <br>
+      <p id="valor">Valor total: R$ <span id="valorTotal">24,99</span></p> <br>
+      <input type="radio" name="pagamento" id="pagamento" checked>
+      <label for="pagamento">Cartão de crédito</label>
+    </section>
+  </main>
   <script src="../js/script.js"></script>
+  <script src="../js/carrinho.js"></script>
 </body>
 </html>

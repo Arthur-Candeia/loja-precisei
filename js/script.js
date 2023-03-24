@@ -1,7 +1,7 @@
-foto1 = 'url(images/violeta/violeta1.jpg)'
-foto2 = 'url(images/violeta/violeta2.jpg)'
-foto3 = 'url(images/violeta/violeta3.jpg)'
-foto4 = 'url(images/violeta/violeta4.jpg)'
+let foto1 = 'url(images/violeta/violeta1.jpg)'
+let foto2 = 'url(images/violeta/violeta2.jpg)'
+let foto3 = 'url(images/violeta/violeta3.jpg)'
+let foto4 = 'url(images/violeta/violeta4.jpg)'
 let quantidade = 1
 
 function mudarTamanho() {
@@ -35,12 +35,12 @@ function Violeta() {
   foto4 = 'url(images/violeta/violeta4.jpg)'
   /*Faz voltar a primeira imagem e deixar ela com estilo de selecionada*/
   exibir.style.backgroundImage = foto1
+  historia.style.backgroundColor = 'red'
   img01.style.transform = 'scale(1.1)'
   img02.style.transform = 'scale(1)'
   img03.style.transform = 'scale(1)'
   img04.style.transform = 'scale(1)'
 }
-
 function Marrom() {
   /*Troca os src's das imagens pequenas*/
   img01.setAttribute('src', 'images/marrom/marrom1.jpg');
@@ -58,7 +58,6 @@ function Marrom() {
   img02.style.transform = 'scale(1)'
   img03.style.transform = 'scale(1)'
   img04.style.transform = 'scale(1)'
-  
 }
 
 function Branca() {
@@ -174,6 +173,8 @@ function menos() {
   if (quantidade >= 2) {
     quantidade -= 1
     qtd.innerHTML = quantidade
+    let valor = 24.99 * quantidade
+    valorTotal.innerHTML = valor.toFixed(2)
   }
 }
 
@@ -181,6 +182,8 @@ function mais() {
   if (quantidade <=8) {
     quantidade += 1
     qtd.innerHTML = quantidade
+    let valor = 24.99 * quantidade
+    valorTotal.innerHTML = valor.toFixed(2)
   }
 }
 
@@ -189,3 +192,6 @@ window.sr = ScrollReveal({reset: true});
 sr.reveal('section#part2', {duration: 1000});
 sr.reveal('section#part3', {duration: 1000});
 sr.reveal('section#ajuda', {duration: 1000});
+
+
+//PARTE DO CARRINHO

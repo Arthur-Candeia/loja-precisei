@@ -80,3 +80,78 @@ nav > a:hover {
     color: var(--cor5);
 }
 /*FIM DO HEADER*/
+main {
+    padding-top: 10px;
+}
+
+section#carrinho {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 320px;
+    min-width: 250px;
+    margin: 0 auto 10px auto;
+    border: 2px solid var(--cor5);
+    border-radius: 5px;
+    padding-left: 5px;
+    transform: translate(-50%, -50%);
+}
+
+#imagemCarrinho {
+    max-width: 320px;
+    min-width: 250px;
+    height: 100px;
+    background: var(--cor5) url('../images/violeta/violeta1.jpg') center center no-repeat fixed;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: -5px;
+}
+
+section#carrinho > p {
+    display: inline-block;
+    
+    font-family: 'Tilt neon'
+}
+
+select {
+    font-family: 'Tilt neon';
+    outline: none;
+    border: 1px solid var(--cor3);
+    border-radius: 3px;
+    margin: 0px 0 10px 0;
+}
+
+.definir-quantidade {
+    display: inline-block;
+    margin-top: 0px;
+}
+
+button.definir-quantidade {
+    cursor: pointer;
+    background-color: var(--cor4);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+#valor {
+    margin: 8px 0 8px 0;
+}
+
+#pagamento:checked {
+    display: none;
+}
+
+label::before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--cor3);
+    margin-right: 5px;
+    border: 3.5px solid var(--cor5);
+}
+
