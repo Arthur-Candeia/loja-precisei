@@ -81,7 +81,13 @@ nav > a:hover {
 }
 /*FIM DO HEADER*/
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 530px;
     padding-top: 10px;
+    margin-top: 20px;
 }
 
 section#carrinho {
@@ -90,7 +96,7 @@ section#carrinho {
     left: 50%;
     max-width: 320px;
     min-width: 250px;
-    margin: 0 auto 10px auto;
+    margin: 0px auto 10px auto;
     border: 2px solid var(--cor5);
     border-radius: 5px;
     padding-left: 5px;
@@ -100,7 +106,7 @@ section#carrinho {
 #imagemCarrinho {
     max-width: 320px;
     min-width: 250px;
-    height: 100px;
+    height: 110px;
     background: var(--cor5) url('../images/violeta/violeta1.jpg') center center no-repeat fixed;
     background-size: cover;
     margin-bottom: 10px;
@@ -154,4 +160,22 @@ label::before {
     margin-right: 5px;
     border: 3.5px solid var(--cor5);
 }
+
+a#finalizarCompra {
+    display: block;
+    margin-top: 10px;
+    margin-left: -5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--cor1);
+    color: var(--cor5);
+}
+
+a#finalizarCompra:active {
+    background-color: var(--cor5);
+    color: var(--cor1);
+    box-shadow: inset 1px 1px 10px var(--cor3);
+}
+
 

@@ -237,6 +237,10 @@ button.definir-quantidade {
     border: none;
 }
 
+aside#buy {
+    margin: 10px 10px;
+}
+
 a#comprar {
     display: block;
     width: 100%;
@@ -252,10 +256,6 @@ a#comprar:active {
     background-color: var(--cor5);
     color: var(--cor1);
     box-shadow: inset 1px 1px 10px var(--cor3);
-}
-
-aside#buy {
-    margin: 10px 10px;
 }
 
 /*PARTE 2*/
