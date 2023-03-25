@@ -30,16 +30,22 @@
   <main>
     <section id="informacoes">
       <form action="" autocomplete="off" method="POST">
-        <label for="nome">Nome no cartão</label>
-        <input type="text" name="nome" id="nome" required minlength="10" maxlength="50" placeholder="Ex: Arthur da Silva">
         <label for="numero">Número do cartão</label>
-        <input type="tel" name="numero" id="numero" required minlength="19" maxlength="19" oninput="input()">
+        <input type="tel" name="numero" id="numero" required minlength="19" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx" oninput="numcard()"> <button onclick="limparNumero()">Limpar</button>
+        <label for="nome">Nome no cartão</label>
+        <input type="text" name="nome" id="nome" required minlength="10" maxlength="50" placeholder="Ex: Arthur da Silva" oninput="namecard()">
         <label for="data">Vencimento do cartão</label>
-        <input type="month" name="data" id="data" required>
-        <div>
-          <p id="teste"></p>
-          <p id="numeroCartao"></p>
-          <p></p>
+        <input type="month" name="data" id="data" required oninput="datecard()">
+        <div id="cartao">
+          <img src="../images/icons/visa.png" alt="" id="visa">
+          <img src="../images/icons/mastercard.png" alt="" id="mastercard">
+          <span id="bandeiraDesconhecida"></span>
+          <img src="../images/icons/chip.png" alt="" id="chip">
+          <img src="../images/icons/nfc.png" alt="" id="nfc">
+          <p id="numeroCartao">XXXX XXXX XXXX XXXX</p>
+          <p id="nomeCartao">ARTHUR DA SILVA</p>
+          <p id="dataCartao">A/M</p>
+          <span id="teste"></span>
         </div>
         <input type="submit" value="FINALIZAR COMPRA">
       </form>

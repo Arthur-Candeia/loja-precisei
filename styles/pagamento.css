@@ -91,3 +91,61 @@ section#informacoes {
     border-radius: 5px;
     padding-top: 5px;
 }
+
+main label {
+    display: block;
+}
+
+input#nome {
+    text-transform: uppercase;
+}
+
+div#cartao {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "vazio1 vazio1 vazio1 vazio1 vazio1"
+    "vazio2 vazio2 vazio2 vazio2 bandeira"
+    "chip nfc vazio3 vazio3 vazio3"
+    "numero numero numero numero numero"
+    "nome nome nome nome data";
+    gap: 10px;
+    padding: 0 20px 10px 20px;
+}
+
+img#visa, img#mastercard {
+    grid-area: bandeira;
+    width: 40px;
+    visibility: hidden;
+    margin-top: -10px;
+}
+
+span#bandeiraDesconhecida {
+    grid-area: bandeira;
+    font-size: 0.7em;
+    margin-top: -10px;
+}
+
+img#chip {
+    grid-area: chip;
+    width: 40px;
+}
+img#nfc {
+    grid-area: chip;
+    margin-left: 55px;
+    width: 20px;
+    margin-top: 10px;
+}
+
+#numeroCartao {grid-area: numero;}
+#nomeCartao {
+    grid-area: nome;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+#dataCartao {
+    grid-area: data;
+    font-size: 0.65em;
+}
