@@ -30,6 +30,9 @@ function numcard() {
 function limparNumero() {
   numero.value = ''
   numeroCartao.innerHTML = ''
+  document.getElementById('visa').style.visibility = 'hidden'
+  document.getElementById('mastercard').style.visibility = 'hidden'
+  document.getElementById('bandeiraDesconhecida').style.display = 'none'
 }
 
 function namecard() {
@@ -40,4 +43,9 @@ function namecard() {
 function datecard() {
   let dataDigitada = data.value
   dataCartao.innerHTML = dataDigitada
+}
+
+function colorcard() {
+  let corEscolhida = cor.value
+  cartao.style.backgroundColor = corEscolhida
 }

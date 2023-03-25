@@ -29,13 +29,15 @@
 
   <main>
     <section id="informacoes">
-      <form action="" autocomplete="off" method="POST">
+      <form action="../pags/pagamento-confirmado.html" autocomplete="off" method="POST">
         <label for="numero">Número do cartão</label>
         <input type="tel" name="numero" id="numero" required minlength="19" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx" oninput="numcard()"> <button onclick="limparNumero()">Limpar</button>
         <label for="nome">Nome no cartão</label>
-        <input type="text" name="nome" id="nome" required minlength="10" maxlength="50" placeholder="Ex: Arthur da Silva" oninput="namecard()">
+        <input type="text" name="nome" id="nome" required minlength="10" maxlength="50" placeholder="Ex: nome da Silva" oninput="namecard()">
         <label for="data">Vencimento do cartão</label>
         <input type="month" name="data" id="data" required oninput="datecard()">
+        <label for="cor">Personalizar cor do cartão</label>
+        <input type="color" name="cor" id="cor" oninput="colorcard()" value="#C4B3D7">
         <div id="cartao">
           <img src="../images/icons/visa.png" alt="" id="visa">
           <img src="../images/icons/mastercard.png" alt="" id="mastercard">
@@ -43,7 +45,7 @@
           <img src="../images/icons/chip.png" alt="" id="chip">
           <img src="../images/icons/nfc.png" alt="" id="nfc">
           <p id="numeroCartao">XXXX XXXX XXXX XXXX</p>
-          <p id="nomeCartao">ARTHUR DA SILVA</p>
+          <p id="nomeCartao"></p>
           <p id="dataCartao">A/M</p>
           <span id="teste"></span>
         </div>
