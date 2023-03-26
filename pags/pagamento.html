@@ -29,7 +29,7 @@
 
   <main>
     <section id="informacoes">
-      <form action="../pags/pagamento-confirmado.html" autocomplete="off" method="POST">
+      <form action="" autocomplete="off" method="POST" id="form">
         <label for="numero">Número do cartão</label>
         <input type="tel" name="numero" id="numero" required minlength="19" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx" oninput="numcard()"> <button onclick="limparNumero()">Limpar</button>
         <label for="nome">Nome no cartão</label>
@@ -49,7 +49,8 @@
           <p id="dataCartao">A/M</p>
           <span id="teste"></span>
         </div>
-        <input type="submit" value="FINALIZAR COMPRA">
+        <input type="submit" value="FINALIZAR COMPRA" onclick="comprar()" id="mandar">
+        <input type="text" name="verify" id="verify" required style="display: none;"> <!--Segura o form para dar tempo de redirecionar-->
       </form>
     </section>
   </main>
