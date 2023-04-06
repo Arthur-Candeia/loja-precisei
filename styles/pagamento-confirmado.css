@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor1: #54426C;
+  --cor2: #846F98;
+  --cor3: #857099;
+  --cor4: #9A85B0;
+  --cor5: #C4B3D7;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  background-color: var(--cor5);
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 0px;
+  height: 100%;
+}
+
+p#agradecimento {
+  text-align: center;
+  font: normal 2em 'Tilt neon';
+  padding: 5px;
+  background-color: #f6f4f8;
+  text-shadow: 0.5px 0px 0px var(--cor1);
+  color: var(--cor2);
+  border: 2px solid var(--cor1);
+  border-radius: 10px;
+}
+
+div#aviso {
+  background-color: lightyellow;
+  font: normal 1em arial, sans-serif;
+  padding: 10px 20px;
+  text-align: justify;
+  line-height: 1.5;
+  border: 2px solid var(--cor1);
+  border-radius: 10px;
+}
+
+div#aviso > img {
+  display: block;
+  margin:  10px auto 0px auto;
+  width: 130px;
+}
+
+a#home {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--cor3);
+  color: white;
+  text-decoration: none;
+  font-family: 'Tilt neon';
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+a#home:focus {
+  background-color: red;
+  background-color: white;
+  color: var(--cor3);
+  border: 2px solid var(--cor1);
+}

@@ -2,7 +2,16 @@
   section#part2 > div > picture {
     display: none;
   }
-  
+
+  body#body-pagconfirm {
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #body-pagconfirm > main {
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
@@ -233,6 +242,18 @@
     width: 900px;
     max-width: 1000px;
     height: 830px;
+  }
+
+  /*PAGAMENTO CONFIRMADO*/
+  body#body-pagconfirm {
+    margin: 0px;
+  }
+
+  #body-pagconfirm > main {
+    justify-content: space-between;
+    width: 50%;
+    height: 90%;
+    padding: 2px 0px;
   }
 }
 

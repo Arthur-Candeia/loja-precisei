@@ -43,9 +43,7 @@ function namecard() {
 }
 
 function datecard() {
-  let dataDigitada = data.value
-  dataCartao.innerHTML = dataDigitada
-  
+  dataCartao.innerHTML = data.value[5] + data.value[6] + '/' + data.value[0] + data.value[1] + data.value[2] + data.value[3]
 }
 
 function colorcard() {
